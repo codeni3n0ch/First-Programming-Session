@@ -13,7 +13,7 @@ public class BasicCalculator {
         
         //Formula
         int Sum = num1 + num2;
-        System.out.println("The Sum of the number is:" + Sum);
+        System.out.println("The Sum of the number is:" + sum);
         int dif = num1 - num2;
         System.out.println("The Difference is:" + dif);
         int pro = num1 * num2;
