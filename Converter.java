@@ -1,6 +1,6 @@
 import java.util.Scanner; //Import Scanner class
-
 public class Converter {
+
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a Decimal Number:");
@@ -18,4 +18,7 @@ public class Converter {
                 System.out.println("Please enter a valid decimal number.");
     }
          
-} 
+}
+}
+    
+}
