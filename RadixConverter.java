@@ -4,7 +4,7 @@ public class RadixConverter {
     public static void main(String[] args) {
         Scanner scanner;
         scanner = new Scanner(System.in);
-        
+        //Ask user for the input
         while (true) {
             System.out.print("Enter the origin number system (2-16) or 'STOP' to exit: ");
             String baseInput = scanner.nextLine();
