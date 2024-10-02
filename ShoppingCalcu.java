@@ -1,22 +1,15 @@
+/*
+ *Ferreria,Enoch Cuthbert A.
+ *CC2 1-B
+ */
 import java.util.Scanner;
-
-public class ShoppingCalcu {
+public class ShoppingCalculator {
     public static void main(String[] args) {
 
         //Declaration of variables
-        int price1;
-        int quantity1;
-        int price2;
-        int quantity2;
-        int price3;
-        int quantity3;
-        int total1, total2, total3;
-        double dRate;
-        double discount;
-        double discountCost = 0.00;
-        double sTax = 0.00;
-        double sTax1 = 0.00;
-        double totalCost;
+        int price1,quantity1,price2,quantity2,price3,quantity3,total1, total2, total3;
+     
+        double dRate, discount,discountCost = 0.00,sTax = 0.00,sTax1 = 0.00,totalCost;
 
         //Scanner
         Scanner sc = new Scanner(System.in);
@@ -49,26 +42,28 @@ public class ShoppingCalcu {
             quantity3 = sc.nextInt();
     
             total3 = price3*quantity3;
-            System.out.print("Total price of item 3: " + price3*quantity3);
+            System.out.println("Total price of item 3: " + price3*quantity3);
+            
+            System.out.println("==========================");
 
             //Subtotal of all three items
-            int Subtotal = total1 + total2 + total3;
-            System.out.println("\nSubtotal: " + "PHP " + Subtotal);
+            double subTotal = total1 + total2 + total3;
+            System.out.printf("\nSubtotal:" + " PHP " + "%.2f%n", subTotal);
 
             //Discount
             dRate = 5/100.0;
-            discount = Subtotal*dRate;
-            discountCost = Subtotal-discount;
-            System.out.println("Discount: " + "PHP " + discountCost);  
+            discount = subTotal*dRate;
+            discountCost = subTotal-discount;
+            System.out.printf("Discount:" + " PHP " + "%.2f%n", discountCost);  
             
             //Sales tax
             sTax = 12/100.0;
             sTax1 = discountCost*sTax;
-            System.out.println("Sales Tax: " + "PHP " + sTax1);
+            System.out.printf("Sales Tax:" + " PHP " +  "%.2f%n", sTax1);
 
             //Final Total
             totalCost = discountCost + sTax1;
-            System.out.println("Final Total: " + "PHP " + totalCost);
+            System.out.printf("Final Total: " + " PHP " + "%.2f%n", totalCost);
 
         }
     }
