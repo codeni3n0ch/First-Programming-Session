@@ -1,40 +1,39 @@
 import java.util.Scanner;
 
-public class DecimalConverter {
+public class Decimal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        while (true) {
-            System.out.print("Enter a decimal number (or 'STOP' to quit): ");
-            String userInput = scanner.next();
+        // Input hexadecimal number
+        System.out.print("Enter a hexadecimal number: ");
+        String hexInput = scanner.nextLine();
+        
+        // Input octal number
+        System.out.print("Enter an octal number: ");
+        String octalInput = scanner.nextLine();
+        
+        System.out.print("Enter an octal number: ");
+          octalInput = scanner.nextLine();
+        
+        // Input binary number
+        System.out.print("Enter a binary number: ");
+        String binaryInput = scanner.nextLine();
+        
+        System.out.print("Enter an octal number: ");
+          octalInput = scanner.nextLine();
+        
+        // Convert inputs to decimal
+        int decimalFromHex = Integer.parseInt(hexInput, 16);
+        int decimalFromOctal = Integer.parseInt(octalInput, 8);
+        int decimalFromBinary = Integer.parseInt(binaryInput, 2);
 
-            if (userInput.equalsIgnoreCase("STOP")) {
-                break;
-            }
+        // Calculate the sum in decimal
+        int sumInDecimal = decimalFromHex - decimalFromOctal + decimalFromOctal * decimalFromBinary / decimalFromOctal;
 
-            try {
-                int decimal = Integer.parseInt(userInput);
-                String binary = Integer.toBinaryString(decimal);
-                String octal = Integer.toOctalString(decimal);
-                String hexa = Integer.toHexString(decimal);
+        // Output the result
+        System.out.println("Sum in decimal: " + sumInDecimal);
 
-                // Separate the nibbles in the binary representation
-                String binaryNibbles = "";
-                for (int i = 0; i < binary.length(); i++) {
-                    if ((i % 4) == 0 && i != 0) {
-                        binaryNibbles = " " + binaryNibbles;
-                    }
-                    binaryNibbles = binary.charAt(i) + binaryNibbles;
-                }
-
-                System.out.println("Decimal: " + decimal);
-                System.out.println("Binary: " + binaryNibbles);
-                System.out.println("Octal: " + octal);
-                System.out.println("Hexadecimal: " + hexa);
-                System.out.println();
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid input. Please enter a decimal number.");
-            }
-        }
+        // Close the scanner
+        scanner.close();
     }
 }
