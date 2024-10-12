@@ -1,15 +1,18 @@
 
 /**
  *
- * @author Ferreria, Enoch Cuthbert A.
+ * @author Ferreria,Enoch Cuthbert A.
+ * //Lab Challenge 4
+ * //Grocery Store Discount Calculator
  */
 import java.util.Scanner;
-public class GroceryStoreDiscountCalcu {
+
+public class DiscountCalculator {
     public static void main(String[] args ){
         Scanner scanner = new Scanner(System.in);
         
             //Determine the discount for specific price
-            System.out.print("Enter a total amount:");
+            System.out.print("Enter a total amount: PHP");
             double totalAmount = scanner.nextDouble(), discount = 0, discountedPrice;
             if (totalAmount  <= 1000){
                 discount = 0; //No Discount
