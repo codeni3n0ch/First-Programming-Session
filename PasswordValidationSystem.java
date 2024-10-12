@@ -10,7 +10,8 @@ public class PasswordValidationSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String password;
-
+        
+        //Ask the User for password input
         while (true) {
             System.out.print("Enter your password: ");
             password = scanner.nextLine();
@@ -25,7 +26,7 @@ public class PasswordValidationSystem {
 
         scanner.close();
     }
-
+     
     private static boolean isValidPassword(String password) {
         // Check password length
         if (password.length() < 8) {
