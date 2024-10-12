@@ -2,8 +2,8 @@
 /**
  *
  * @author Ferreria, Enoch Cuthbert A.
- * //Lab Challenge 6
- * //Class Attendance
+ * Lab Challenge 6
+ * Class Attendance
  */
 import java.util.Scanner;
 public class ClassAttendance {
