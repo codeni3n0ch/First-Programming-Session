@@ -2,8 +2,8 @@
 /**
  *
  * @author Ferreria,Enoch Cuthbert A.
- * //Lab Challenge 4
- * //Grocery Store Discount Calculator
+ * Lab Challenge 4
+ * Grocery Store Discount Calculator
  */
 import java.util.Scanner;
 
