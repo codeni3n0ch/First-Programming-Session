@@ -2,6 +2,8 @@
 /**
  *
  * @author Ferreria,Enoch Cuthbert A,
+ */ Lab Challenge 7
+ */ Password Validation System
  */
 import java.util.Scanner;
 public class PasswordValidationSystem {
