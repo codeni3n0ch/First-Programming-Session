@@ -2,6 +2,7 @@
 /**
  *
  * @author Ferreria, Enoch Cuthbert A.
+ * Lab Challenge 5
  * Restaurant Order System
  */
 import java.util.Scanner;
