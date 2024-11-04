@@ -8,20 +8,20 @@
 import java.util.Scanner;
 public class RestaurantOrderSystem {
     public static void main (String[] args){
-          Scanner scanner = new Scanner(System.in);
-          int choice; 
+        Scanner scanner = new Scanner(System.in);
+        int choice; 
           int quantity;
           double  totalPrice = 0;
           
           //Food Menu list
-       System.out.println("1. Burger \t- PHP 100");
-       System.out.println("2. Fries  \t- PHP 50");
-       System.out.println("3. Soda   \t- PHP 30");
-       System.out.println("4. Ice Cream \t- PHP 45");
-       System.out.println("5. EXIT");
+        System.out.println("1. Burger \t- PHP 100");
+        System.out.println("2. Fries  \t- PHP 50");
+        System.out.println("3. Soda   \t- PHP 30");
+        System.out.println("4. Ice Cream \t- PHP 45");
+        System.out.println("5. EXIT");
        
-       System.out.print("Enter the menu number of your choice (1-5): ");
-            choice = scanner.nextInt();
+        System.out.print("Enter the menu number of your choice (1-5): ");
+       choice = scanner.nextInt();
             
         // Get user input for quantity
         System.out.print("Please enter the quantity: ");
